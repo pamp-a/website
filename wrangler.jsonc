@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pampa-website",
+  "account_id": "e72d333cb8ad895b5f1bc932317192ec",
   "compatibility_date": "2026-10-04",
   "assets": {
     "directory": "./public"
