@@ -17,11 +17,11 @@
       --blue: #6687ef;
       --green: #49bb7c;
       --pink: #ed92bc;
-      --orange: #ef8b35;
+      --orange: #864c1a;
       --white: #e8e5de;
 
-      --card-width: 360px;
-      --speed: 125;
+      --card-width: auto;
+      --speed: 100;
 
       --font: "Helvetica Neue", "Neue Haas Grotesk Text Pro",
               "Inter", Helvetica, Arial, sans-serif;
@@ -63,10 +63,10 @@
       position: absolute;
 
       width: min(var(--card-width), calc(100vw - 28px));
-      padding: 30px;
+      padding: 0px;
 
       color: var(--color);
-      border: 1px solid currentColor;
+      border: 0px solid currentColor;
       background: transparent;
 
       text-decoration: none;
@@ -110,7 +110,7 @@
       --max-size: 62px;
       --max-spacing: 16px;
 
-      font-weight: 300;
+      font-weight: 800;
     }
 
     .cities {
@@ -118,11 +118,16 @@
       --min-size: 12px;
       --max-size: 17px;
       --max-spacing: 9px;
+      
+      text-align:justify;
 
-      margin-top: 31px;
+      margin-top: 17px;
 
       font-weight: 500;
       text-transform: lowercase;
+      display: flex;
+      justify-content:space-between;
+
     }
 
     .email {
@@ -132,11 +137,10 @@
       --max-spacing: 5px;
 
       margin-top: 17px;
-      padding-top: 17px;
-
-      border-top: 1px solid currentColor;
+      padding-top: 0px;
 
       font-weight: 400;
+      text-align:
     }
 
     .phone {
@@ -145,7 +149,7 @@
       --max-size: 15px;
       --max-spacing: 5px;
 
-      margin-top: 12px;
+      margin-top: 17px;
 
       font-weight: 400;
       opacity: .68;
@@ -187,7 +191,7 @@
 
     <a id="card" href="mailto:contact@pampatelier.eu">
       <div class="fit brand">pamp.a</div>
-      <div class="fit cities">paris lausanne</div>
+      <div class="fit cities"><span>paris</span> . <span>lausanne</span></div>
       <div class="fit email">contact@pampatelier.eu</div>
       <div class="fit phone">+33 7 45 03 95 54</div>
     </a>
@@ -296,7 +300,7 @@
         `var(${colors[color]})`
       );
 
-      document.body.classList.toggle("filled");
+      
     }
 
     function pause() {
