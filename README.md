@@ -16,9 +16,11 @@ bun run dev
 
 ## Deploy
 
+Every push to `main` deploys through Workers Builds, to the Worker `website`
+on the pamp.a Cloudflare account. The account is pinned in `wrangler.jsonc`.
+
+To deploy by hand, log in to that account and run:
+
 ```bash
 bun run deploy
 ```
-
-The Worker is called `pampa-website` (see `wrangler.jsonc`). The first deploy
-asks you to log in with `bunx wrangler login`.
