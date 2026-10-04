@@ -1,5 +1,5 @@
 {
-  "name": "pampa-website",
+  "name": "website",
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
