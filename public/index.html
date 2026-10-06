@@ -21,7 +21,7 @@
       --white: #e8e5de;
 
       --card-width: auto;
-      --speed: 80;
+      --speed: 70;
 
       --font: "Helvetica Neue", "Neue Haas Grotesk Text Pro",
               "Inter", Helvetica, Arial, sans-serif;
@@ -113,6 +113,23 @@
       font-weight: 800;
     }
 
+      .activity {
+      --ideal-size: 14px;
+      --min-size: 12px;
+      --max-size: 17px;
+      --max-spacing: 9px;
+      
+      text-align:justify;
+
+      margin-top: 5px;
+
+      font-weight: 500;
+      text-transform: lowercase;
+      display: flex;
+      justify-content:space-between;
+
+    }
+
     .cities {
       --ideal-size: 14px;
       --min-size: 12px;
@@ -123,23 +140,27 @@
 
       margin-top: 17px;
 
-      font-weight: 500;
+      font-weight: 200;
       text-transform: lowercase;
       display: flex;
       justify-content:space-between;
 
     }
 
-    .email {
-      --ideal-size: 15px;
-      --min-size: 13px;
+     .email {
+      --ideal-size: 14px;
+      --min-size: 12px;
       --max-size: 17px;
-      --max-spacing: 5px;
+      --max-spacing: 9px;
+      
+      text-align:justify;
 
       margin-top: 17px;
-      padding-top: 0px;
 
-      font-weight: 400;
+      font-weight: 200;
+      text-transform: lowercase;
+      display: flex;
+      justify-content:space-between;
     }
 
     .phone {
@@ -148,7 +169,7 @@
       --max-size: 15px;
       --max-spacing: 5px;
 
-      margin-top: 17px;
+      margin-top: 5px;
 
       font-weight: 400;
       opacity: .68;
@@ -156,13 +177,13 @@
 
     #card:hover,
     #card:focus-visible {
-      background: color-mix(in srgb, currentColor 5%, transparent);
+      background: color-mix(in srgb, currentColor 10%, transparent);
       outline: none;
     }
 
     @media (max-width: 500px) {
       :root {
-        --card-width: 320px;
+        --card-width: 205px;
       }
 
       #card {
@@ -174,8 +195,8 @@
       }
 
       .email {
-        margin-top: 15px;
-        padding-top: 15px;
+        margin-top: 2px;
+        padding-top: 2px;
       }
     }
   </style>
@@ -190,9 +211,10 @@
 
     <a id="card" href="mailto:contact@pampatelier.eu">
       <div class="fit brand">pamp.a</div>
-      <div class="fit cities"><span>paris</span> . <span>lausanne</span></div>
-      <div class="fit email">contact@pampatelier.eu</div>
-      <div class="fit phone">+33 7 45 03 95 54</div>
+      <div class="fit activity"><span>pratique</span> <span>architecturale</span></div>
+      <div class="fit cities"><span>paris</span> <span>lausanne</span></div>
+      <div class="fit email"><span>contact</span>@<span>pampatlier</span>.<span>eu</span></div>
+      <div class="fit phone">
     </a>
 
   </main>
